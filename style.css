@@ -15,10 +15,6 @@ header{
     font-size: 1.5rem;
 }
 
-.dates {
-    justify-content: center;
-    align-items: center;
-}
 
 header,form {
     min-height: 20vh ;
