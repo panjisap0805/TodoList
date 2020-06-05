@@ -3,11 +3,17 @@ const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
+const dateElement = document.getElementById ('date');
 
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
+
+//Tanggal
+const options = { weekday: 'long', month: 'short', day:'numeric'};
+const today = new Date();
+dateElement.innerHTML = today.toLocaleDateString('en-US', options);
 
 //Functions
 function addTodo(event){
